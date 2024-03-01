@@ -4067,6 +4067,7 @@ GameObject:
   - component: {fileID: 3121572923571884886}
   - component: {fileID: 5333804998061325588}
   - component: {fileID: 7619108771092733197}
+  - component: {fileID: 1344192037343605147}
   m_Layer: 0
   m_Name: SphereView
   m_TagString: Untagged
@@ -4139,6 +4140,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!135 &1344192037343605147
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5336805789891866385}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5358960121370976373
 GameObject:
   m_ObjectHideFlags: 0
@@ -4461,7 +4483,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3366081381141091294}
-  - component: {fileID: 2372724271094519063}
+  - component: {fileID: 6869247632759162505}
   m_Layer: 0
   m_Name: Planet
   m_TagString: Planet
@@ -4492,7 +4514,7 @@ Transform:
   - {fileID: 3121572923571884886}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!135 &2372724271094519063
+--- !u!135 &6869247632759162505
 SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4511,7 +4533,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 27.83
+  m_Radius: 250
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6069145847843918237
 GameObject:
@@ -7379,7 +7401,7 @@ MonoBehaviour:
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.07333333
   m_MinRegionArea: 2
-  m_NavMeshData: {fileID: 23800000, guid: 084c78d5f321ebe47b9ae130b68d8b92, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 25cab0c458eeae540af410560dc871f8, type: 2}
   m_BuildHeightMesh: 0
 --- !u!64 &7542477207426108371
 MeshCollider:
@@ -7558,7 +7580,7 @@ MonoBehaviour:
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.07333333
   m_MinRegionArea: 2
-  m_NavMeshData: {fileID: 23800000, guid: 7667121cfed3996468533c03f5d65675, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 93deeca982d54d14589a16c9f28aacbc, type: 2}
   m_BuildHeightMesh: 0
 --- !u!64 &3849823067283644670
 MeshCollider:
@@ -7731,7 +7753,7 @@ MonoBehaviour:
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.07333333
   m_MinRegionArea: 2
-  m_NavMeshData: {fileID: 23800000, guid: 4095284e15728994d912f8e1fc3ea062, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: ee2e79b05659a264da4af72dc3361443, type: 2}
   m_BuildHeightMesh: 0
 --- !u!64 &2542425755457300772
 MeshCollider:
@@ -7910,7 +7932,7 @@ MonoBehaviour:
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.07333333
   m_MinRegionArea: 2
-  m_NavMeshData: {fileID: 23800000, guid: 16b9293c01c314a49bceb43442eb398c, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 906c4b550b8234148bc9da5d9344092e, type: 2}
   m_BuildHeightMesh: 0
 --- !u!64 &3628182160983757595
 MeshCollider:
@@ -8091,7 +8113,7 @@ MonoBehaviour:
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.07333333
   m_MinRegionArea: 2
-  m_NavMeshData: {fileID: 23800000, guid: 3115b3f4bcd9f91449af04fe8bfe9a9b, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 181a1071e5e98a44dad3d8d755c38fe6, type: 2}
   m_BuildHeightMesh: 0
 --- !u!64 &3878039387863364228
 MeshCollider:
@@ -8261,7 +8283,7 @@ MonoBehaviour:
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.07333333
   m_MinRegionArea: 2
-  m_NavMeshData: {fileID: 23800000, guid: 5d21de1496272a84caca91b9ac568154, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: b66b5d98f2ed169429b53daaf7625e7e, type: 2}
   m_BuildHeightMesh: 0
 --- !u!64 &6217798509705939900
 MeshCollider:
