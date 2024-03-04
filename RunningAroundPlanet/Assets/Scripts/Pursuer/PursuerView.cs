@@ -1,28 +1,27 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
+using Core;
 using UnityEngine;
+using UnityEngine.AI;
+using VContainer;
 
 namespace PursuerSystem
 {
-	public class PursuerView : MonoBehaviour
+	public class PursuerView : Character
 	{
-		public event Action<bool> OnMoving;
+		[Inject] private PursuerController _pursuer;
 
-		private void OnTriggerEnter(Collider other)
-		{
-			if (other.tag.Equals("Player"))
-			{
-				OnMoving?.Invoke(false);
-			}
-		}
+		[SerializeField] private NavMeshAgent _agent;
 
-		private void OnTriggerExit(Collider other)
+		public override void Start()
 		{
-			if (other.tag.Equals("Player"))
+			PursuerItem item = new()
 			{
-				OnMoving?.Invoke(true);
-			}
+				//RB = _rb,
+				Agent = _agent,
+				Anim = _anim,
+				View = transform
+			};
+
+			_pursuer.Init(item);
 		}
 	}
 }

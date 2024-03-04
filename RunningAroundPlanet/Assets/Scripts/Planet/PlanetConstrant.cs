@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace PlanetSystem
@@ -7,6 +5,7 @@ namespace PlanetSystem
 	public class PlanetConstrant : MonoBehaviour
 	{
 		private Vector3 _planetPos;
+		private float rotationSpeed = 5f; // Скорость вращения игрока
 
 		protected void OnTriggerEnter(Collider other)
 		{
@@ -17,9 +16,10 @@ namespace PlanetSystem
 		}
 
 		protected virtual void FixedUpdate()
-		{
-			Quaternion rot = Quaternion.FromToRotation(-transform.up, _planetPos - transform.position);
-			transform.rotation = rot * transform.rotation;
+		{  
+			Vector3 toPlanetDirection = (transform.position - _planetPos).normalized;
+			Quaternion targetRotation = Quaternion.FromToRotation(transform.up, toPlanetDirection) * transform.rotation;
+			transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed);
 		}
 	}
 }
