@@ -10,5 +10,7 @@ namespace Core
 
 		public const float PlayerSpeed = 30f;
 		public const float PlayerSensativity = 5f;
+
+		public const float JoystickCoef = 2.5f;
 	}
 }

@@ -855,6 +855,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5035377014311606910, guid: 0d9010788c416a04790d5e25726a6c4d,
         type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 5035377014311606910, guid: 0d9010788c416a04790d5e25726a6c4d,
+        type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
@@ -938,8 +943,7 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -44.7
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 6166629036763985291, guid: 0d9010788c416a04790d5e25726a6c4d, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -1049,6 +1053,26 @@ PrefabInstance:
       propertyPath: _moveJoystick
       value: 
       objectReference: {fileID: 39309325}
+    - target: {fileID: 8374617261459030118, guid: 2f04ce0a1e2530149b64f38680913ab3,
+        type: 3}
+      propertyPath: m_ClearFlags
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8374617261459030118, guid: 2f04ce0a1e2530149b64f38680913ab3,
+        type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0.8773585
+      objectReference: {fileID: 0}
+    - target: {fileID: 8374617261459030118, guid: 2f04ce0a1e2530149b64f38680913ab3,
+        type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0.6264744
+      objectReference: {fileID: 0}
+    - target: {fileID: 8374617261459030118, guid: 2f04ce0a1e2530149b64f38680913ab3,
+        type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0.46682093
+      objectReference: {fileID: 0}
     - target: {fileID: 8417319077205886745, guid: 2f04ce0a1e2530149b64f38680913ab3,
         type: 3}
       propertyPath: m_LocalPosition.y

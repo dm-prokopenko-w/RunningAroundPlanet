@@ -1,3 +1,5 @@
+using Core;
+
 namespace UISystem
 {
 	public class UIController 
@@ -12,7 +14,7 @@ namespace UISystem
 		}
 
 		public float MoveVer => _moveJoystick.Vertical;
-		public float MoveHor => _moveJoystick.Horizontal;
-		public float LookHor => _lookJoystick.Horizontal;
+		public float MoveHor => _moveJoystick.Horizontal * Constants.JoystickCoef;
+		public float LookHor => _lookJoystick.Horizontal * Constants.JoystickCoef;
 	}
 }

@@ -41,8 +41,8 @@ namespace PlayerSystem
 
 			_rb.velocity = down + forward + side;
 
-			_anim.SetFloat("X", _uiController.MoveHor * 2.5f);
-			_anim.SetFloat("Y", _uiController.MoveVer * 2.5f);
+			_anim.SetFloat("X", _uiController.MoveHor);
+			_anim.SetFloat("Y", _uiController.MoveVer);
 		}
 
 		private void Look()

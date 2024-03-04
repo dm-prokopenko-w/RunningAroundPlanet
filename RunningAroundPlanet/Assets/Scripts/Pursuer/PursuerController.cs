@@ -31,9 +31,9 @@ namespace PursuerSystem
 		{
 			if (!_isInit) return;
 
-			_view.transform.localPosition = Vector3.MoveTowards(
-				_view.transform.localPosition,
-				_agent.transform.localPosition,
+			_view.transform.position = Vector3.MoveTowards(
+				_view.transform.position,
+				_agent.transform.position,
 				Time.deltaTime * Constants.PursuerSpeed);
 
 			LookAtPlayer();
